@@ -1,9 +1,19 @@
+# Virtual environments
 venv/
-.env/
+.Python
+.env
+.env.local
+.env.*.local
+
+# Bytecode and caches
 __pycache__/
+*.pyc
 *.py[cod]
 *$py.class
-.Python
+*.pyd
+*.dll
+
+# Build and distribution
 build/
 develop-eggs/
 dist/
@@ -18,9 +28,15 @@ var/
 *.egg-info/
 .installed.cfg
 *.egg
+*.tar
+
+# Logs and databases
 *.log
 *.sqlite3
 *.db
+*.pid
+
+# Coverage and testing
 htmlcov/
 .tox/
 .nox/
@@ -33,21 +49,23 @@ coverage.xml
 *.py,cover
 .hypothesis/
 .pytest_cache/
+
+# Jupyter and notebooks
 .ipynb_checkpoints
+
+# IDE and editor settings
 .vscode/
 .idea/
 *.swp
 *.swo
+
+# OS-specific files
 .DS_Store
 Thumbs.db
+
+# Project-specific data
 faiss_index/
 chroma_index/
 uploads/
 data/
 .streamlit/
-*.dockerfile
-*.tar
-*.pid
-.env
-.env.local
-.env.*.local
